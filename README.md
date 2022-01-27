@@ -8,13 +8,13 @@ Sample spring-boot applications that use spring-native.
 docker run --name mysql -e MYSQL_DATABASE=testdb -e MYSQL_ROOT_PASSWORD=my-secret-pw -d -p 3306:3306 mysql:latest
 ```
 
-## simple-jpa-maven
+## Sample application: simple-jpa-maven
 
-Maven based spring-boot application using spring-data JPA, Swagger UI, and spring-web MVC.
+Maven based spring-boot application using spring-data JPA, Swagger UI, Actuators, Prometheus Metrics, and spring-web MVC.
 
 ### Native compile (using GraalVM)
 
-To compile, make sure `JAVA_HOME` points to GraalVM and then run:
+To compile, make sure `JAVA_HOME` points to JDK 11 version of GraalVM and then run:
 
 ```
 ./mvnw -Pnative clean package
@@ -40,13 +40,13 @@ To run the all-in-one JAR:
 docker run -it -e 'SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/testdb' -p 8080:8080 simple-jpa-maven:1.0
 ```
 
-## simple-jpa-gradle
+## Sample application: simple-jpa-gradle
 
-Gradle based spring-boot application using spring-data JPA, Swagger UI, and spring-web MVC.
+Grade based spring-boot application using spring-data JPA, Swagger UI, Actuators, Prometheus Metrics, and spring-web MVC.
 
 ### Native compile (using GraalVM)
 
-To compile, make sure `JAVA_HOME` points to GraalVM and then run:
+To compile, make sure `JAVA_HOME` points to JDK 11 version of GraalVM and then run:
 
 ```
 ./gradlew nativeCompile
