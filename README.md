@@ -31,7 +31,7 @@ target/simple-jpa-maven
 To compile, make sure `JAVA_HOME` points to regular JVM and Docker is running, then run:
 
 ```
-./mvnw clean spring-boot:build-imag
+./mvnw clean spring-boot:build-image
 ```
 
 To run the all-in-one JAR:
