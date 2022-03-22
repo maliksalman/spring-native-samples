@@ -34,7 +34,7 @@ To compile, make sure `JAVA_HOME` points to regular JVM and Docker is running, t
 ./mvnw clean spring-boot:build-image
 ```
 
-To run the all-in-one JAR:
+To run the OCI image with docker:
 
 ```
 docker run -it -e 'SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/testdb' -p 8080:8080 simple-jpa-maven:1.0
@@ -66,7 +66,7 @@ To compile, make sure `JAVA_HOME` points to regular JVM and Docker is running, t
 ./gradlew clean bootBuildImage
 ```
 
-To run the all-in-one JAR:
+To run the OCI image with docker:
 
 ```
 docker run -it -e 'SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/testdb' -p 8080:8080 simple-jpa-gradle:1.0
